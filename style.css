@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(25, 0, 30);
+    color:white;
+}
+
+.topContainer {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.topContainer span {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: "Jersey 10",Impact;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: Impact;
+    font-size: 40px;
+}
+.cloud {
+    position: absolute;
+    left: 10%;
+    width: 200px;
+}
+
+.cloud_2 {
+    position: absolute;
+    right: 10%;
+    width: 200px;
+}
+
+.mountain {
+    margin-top: 200px;
+    width: 400px;
+}
+
+#skillsHeader {
+    text-align: center;
+}
+
+.midContainer {
+    text-align: center;
+    display: flex;
+}
+
+.lastContainer {
+    text-align: center;
+    display: flex;
+}
+
+/* .topContainer {
+    height: 100;
+    width: 100;
+    background-color: white;
+} */
