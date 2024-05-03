@@ -1,6 +1,11 @@
 body {
     background-color: rgb(25, 0, 30);
     color:white;
+    -webkit-animation: fadein 3s; /* Safari, Chrome, and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;
 }
 
 .topContainer {
@@ -22,39 +27,32 @@ h2 {
     font-family: Impact;
     font-size: 40px;
 }
-.cloud {
-    position: absolute;
-    left: 10%;
-    width: 200px;
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(122, 0, 53);
 }
 
-.cloud_2 {
-    position: absolute;
-    right: 10%;
-    width: 200px;
-}
-
-.mountain {
-    margin-top: 200px;
-    width: 400px;
-}
-
-#skillsHeader {
-    text-align: center;
-}
-
-.midContainer {
-    text-align: center;
+.mid-container {
     display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
 }
 
-.lastContainer {
-    text-align: center;
-    display: flex;
+.cursor {
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
 }
 
-/* .topContainer {
-    height: 100;
-    width: 100;
-    background-color: white;
-} */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
